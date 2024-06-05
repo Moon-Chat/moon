@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        'hermit': ['Hermit', 'monospace']
+      }
+    }
   },
-  plugins: []
+  plugins: [require('tailwindcss-animated')]
 };
